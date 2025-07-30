@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSF Sahithyotsav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fbff;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #1e1f23;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-left img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .navbar-left span {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .navbar-links a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar-right button {
+      background-color: transparent;
+      border: 1px solid #00c774;
+      padding: 8px 16px;
+      color: #00c774;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 30px;
+      background-color: #e7f3fc;
+    }
+
+    .welcome {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .bold {
+      font-weight: 600;
+    }
+
+    select {
+      width: 300px;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    /* CARD SECTION */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 20px;
+      position: relative;
+      border-left: 4px solid #1976d2;
+    }
+
+    .card.green-border {
+      border-left-color: #00c774;
+    }
+
+    .card h3 {
+      margin: 0 0 10px 0;
+    }
+
+    .card p {
+      margin: 6px 0;
+    }
+
+    .summary-btn {
+      background-color: #00c774;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .summary-btn i {
+      margin-right: 8px;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 20px;
+      color: #555;
+    }
+
+    .blue-text {
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/SSF_Logo_2021.svg/1200px-SSF_Logo_2021.svg.png" alt="SSF Logo" />
+      <span>Sahithyotsav</span>
+    </div>
+    <div class="navbar-links">
+      <a href="#">Home</a>
+      <a href="#">Competitions ▼</a>
+      <a href="#">Reports</a>
+      <a href="#">Set Details</a>
+      <a href="#">Downloads</a>
+      <a href="#">Lock Setup</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="navbar-right">
+      <button>Logout</button>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <div class="welcome">
+      Welcome <b>PAYYOLI TOWN</b> 7/30/2025 <span class="bold">Sahithyotsav Date :: 23-6-2025</span>
+    </div>
+    <label for="category">Category ::</label><br />
+    <select id="category">
+      <option>Select Category</option>
+      <option>Sub Junior</option>
+      <option>Junior</option>
+      <option>High School</option>
+      <option>Higher Secondary</option>
+      <option>Campus</option>
+    </select>
+
+    <button class="summary-btn"><i>→</i> View Boys Summary</button>
+
+    <div class="cards-container">
+      <div class="card">
+        <h3>TEAMS</h3>
+        <p><strong>Assigned Items: 0</strong></p>
+        <p>Leader Assigned: 0 <span class="blue-text">Pending: 19</span></p>
+        <div class="arrow">➜</div>
+      </div>
+
+      <div class="card green-border">
+        <h3>COMPETITIONS</h3>
+        <p><strong>Total Assigned: 50</strong></p>
+        <p>Subjunior: 6 Junior: 10 High School: 15</p>
+        <p>Higher Secondary: 11 Campus: Senior: 8</p>
+        <div class="arrow">➜</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
